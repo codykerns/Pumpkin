@@ -1,6 +1,6 @@
 //
-//  PumpkinAPI.swift
-//  PumpkinAPI
+//  Pumpkin.swift
+//  Pumpkin
 //
 //  Created by Cody Kerns on 11/22/25.
 //

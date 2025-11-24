@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PumpkinAPI",
+    name: "Pumpkin",
     platforms: [
         .macOS(.v12),
         .iOS(.v15),
@@ -15,19 +15,19 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "PumpkinAPI",
-            targets: ["PumpkinAPI"]
+            name: "Pumpkin",
+            targets: ["Pumpkin"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "PumpkinAPI"
+            name: "Pumpkin"
         ),
         .testTarget(
-            name: "PumpkinAPITests",
-            dependencies: ["PumpkinAPI"]
+            name: "PumpkinTests",
+            dependencies: ["Pumpkin"]
         ),
     ]
 )

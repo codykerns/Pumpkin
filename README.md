@@ -34,13 +34,12 @@ Pumpkin provides a fluent, type-safe API for building and executing HTTP request
 
 Add Pumpkin to your `Package.swift` file:
 
-```swift
-dependencies: [
-    .package(url: "https://github.com/codykerns/PumpkinAPI.git", from: "0.0.1")
-]
+```
+https://github.com/codykerns/Pumpkin.git
 ```
 
 Or add it directly in Xcode:
+
 1. File > Add Package Dependencies
 2. Enter the repository URL
 3. Select the version you want to use
@@ -48,7 +47,7 @@ Or add it directly in Xcode:
 ## Quick Start
 
 ```swift
-import PumpkinAPI
+import Pumpkin
 
 // Simple GET request
 struct User: Codable {
@@ -71,7 +70,7 @@ print(user.name)
 Set global defaults for your API to avoid repetition across requests:
 
 ```swift
-import PumpkinAPI
+import Pumpkin
 
 // Configure once at app startup
 await Pumpkin.defaults.set(baseUrl: "https://api.example.com")
@@ -139,7 +138,7 @@ await Pumpkin.defaults.clear() // Defaults to .all
 ### Basic GET Request
 
 ```swift
-import PumpkinAPI
+import Pumpkin
 
 struct User: Codable {
     let id: Int

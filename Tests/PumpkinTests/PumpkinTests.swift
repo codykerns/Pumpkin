@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import PumpkinAPI
+@testable import Pumpkin
 
 // MARK: - Global Defaults Tests
 
